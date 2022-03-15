@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  width: 25%;
+}
+.RS-elmt {
+  width: 40px;
+}
+
+#RS {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 3rem;
+  width: 300px;
+}
+
+.p-perso{
+  width: 100%;
+}
+.d-a, .u-a{
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: "Exo 2 Black", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+h2, h2 span {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "Exo 2", sans-serif;
+}
+
+h2 span {
+  font-family: "Exo 2 SemiBold", sans-serif;
+}
+
+p {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 1rem;
+  width: 90%;
+  margin: 20px;
+  text-align: center;
+}
+.projets {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+
+.projets-elmt {
+  width: 150px;
+  height: 150px;
+  padding-top: 20px;
+  box-shadow: 0 0 10px gray;
+}
+
+.p-el {
+  width: 125px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+button {
+  background-color: transparent;
+  font-family: "Exo 2 SemiBold", sans-serif;
+  border-top: white;
+  border-right: white;
+  border-left: white;
+  border-bottom: solid 1px black;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+form {
+  box-shadow: 0 0 20px gray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1rem;
+}
+input{
+  width: 200px;
+  border-top: white;
+  border-right: white;
+  border-left: white;
+  border-bottom: solid 1px black;
+}
+.nom, .email, .sujet, .message {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+/*@keyframes slide-enter {*/
+/*  0% {*/
+/*    transform: translateY(1000px);*/
+/*  }*/
+/*  100% {*/
+/*    transform: translateY(0);*/
+/*  }*/
+/*}*/
+
+@media screen {
+  @media ( min-width: 850px) {
+    .menu {
+      position: fixed;
+      transform: translateX(0)!important;
+      height: 8%;
+      background-color: transparent;
+      margin-top: 1rem;
+      justify-content: right;
+    }
+    .menu > ul > li {
+      border: none;
+    }
+    .menu > ul > li > a {
+      font-size: 1.2rem;
+      color: black;
+    }
+    nav > ul {
+      display: flex;
+      flex-direction: row;
+    }
+    html {
+      margin: 60px;
+    }
+    .logo {
+      position: absolute;
+      top: 40px;
+      width: 80px;
+      height: auto;
+      margin-left: 2rem;
+    }
+    h1, h2, p {
+      text-align: left;
+    }
+    h1 {
+      margin-left: 5rem;
+      font-size: 5rem;
+    }
+    h2, h2 > span {
+      font-size: 4rem;
+    }
+    h2 {
+      margin-left: 5rem;
+    }
+    p {
+      margin-left: 5.5rem;
+      font-size: 1.2rem;
+      width: 50%;
+    }
+    #RS{
+      margin-left: 2rem;
+    }
+    .RS-elmt {
+      width: 50px;
+      height: auto;
+    }
+    .illu-acc, .p-perso {
+      width: 50%;
+      height: auto;
+      float: right;
+    }
+    .d-a, .u-a {
+      width: 3%;
+      height: auto;
+    }
+    .projets {
+      float: right;
+      background-color: white;
+      margin-top: 2rem;
+      padding-bottom: 3rem;
+      padding-right: 3rem;
+    }
+    .nav-toggle-bar {
+      display: none;
+    }
+    #index, #propos, #projets, #contact {
+      display: flex;
+      align-items: center;
+    }
+    .d-a {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-100%);
+    }
+    .u-a{
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-100%);
+    }
+    .info-image > img, .info-projets {
+      width: 43vw;
+      margin-left: auto;
+      margin-top: 4rem;
+    }
+    .info-form {
+      margin-top: 10vh;
+      width: 35vw;
+      margin-left: auto;
+    }
+    form {
+      height: 600px;
+      margin-bottom: 7rem;
+      margin-right: 20rem;
+    }
+    textarea {
+      width: 25vw;
+      padding-bottom: 1rem;
+    }
+    .infos {
+      margin-right: auto;
+    }
+    .projets-elmt{
+      width: 225px;
+      height: 215px;
+      margin-right:2.5rem;
+      margin-top: 2rem;
+      transition: transform 0.2s;
+    }
+    .projets-elmt:hover {
+      transform: scale(1.1);
+    }
+    .p-el{
+      padding-top: 1rem;
+    }
+    .nom, .email, .sujet, .message {
+      text-align: center;
+      margin-top: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+
+.flip-leave-active {
+  animation: flip-in-hor-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes flip-in-hor-top {
+  0% {
+    -webkit-transform: rotateX(-80deg);
+    transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
